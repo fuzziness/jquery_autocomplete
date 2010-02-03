@@ -36,7 +36,7 @@ module JrailsAutoCompleteMacroHelper
     # items = entries.map { |entry| content_tag('li', phrase ? highlight(entry.send(field), phrase) : h(entry[field])) }
     # content_tag('ul', items.uniq)
     #entries.map! { |entry| entry[field] }
-    entries.map! { |entry| { 'id' => entry[:id], 'value' => h(entry[field]), 'label' => phrase ? highlight(.send(field), phrase) : h(entry[field]) } }
+    entries.map! { |entry| { 'id' => entry[:id], 'value' => h(entry[field]), 'label' => phrase ? highlight(entry.send(field), phrase) : h(entry[field]) } }
     entries.to_json
   end
 
