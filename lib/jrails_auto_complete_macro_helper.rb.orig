@@ -33,11 +33,16 @@ module JrailsAutoCompleteMacroHelper
 
   def auto_complete_result(entries, field, phrase = nil)
     return unless entries
-    # items = entries.map { |entry| content_tag('li', phrase ? highlight(entry.send(field), phrase) : h(entry[field])) }
+<<<<<<< Updated upstream
+    items = entries.map { |entry| content_tag('li', phrase ? highlight(entry.send(field), phrase) : h(entry.send(field))) }
+    content_tag('ul', items.uniq)
+=======
+    # items = entries.map { |entry| content_tag('li', phrase ? highlight(entry[field], phrase) : h(entry[field])) }
     # content_tag('ul', items.uniq)
     #entries.map! { |entry| entry[field] }
-    entries.map! { |entry| { 'id' => entry[:id], 'value' => h(entry[field]), 'label' => phrase ? highlight(.send(field), phrase) : h(entry[field]) } }
+    entries.map! { |entry| { 'id' => entry[:id], 'value' => h(entry[field]), 'label' => phrase ? highlight(entry[field], phrase) : h(entry[field]) } }
     entries.to_json
+>>>>>>> Stashed changes
   end
 
   def auto_complete_for(object, method, options = {})
