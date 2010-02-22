@@ -1,7 +1,7 @@
 JrailsAutoComplete
 ==================
 
-This plugin adds autocomplete support to jrails, using jquery-ui 1.8.
+This plugin adds autocomplete support to jrails, using jquery-ui 1.8rc2.
 This plugin works similarly to the build in rails auto complete
 
 
