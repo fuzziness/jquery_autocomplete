@@ -1,4 +1,4 @@
-module JrailsAutoCompleteMacroHelper
+module JrailsAutoCompleteMacrosHelper
   def auto_complete_field(field_id, options = {})
     js_options = {}
 
@@ -11,11 +11,11 @@ module JrailsAutoCompleteMacroHelper
     #      options[:defaultParams] = (options[:defaultParams].blank?? '' : options[:defaultParams] + '&') +
     #        "#{h(request_forgery_protection_token.to_s)}=#{h(form_authenticity_token)}"
     #    end
+    #    js_options[:type]          = "'#{options[:method].to_s.upcase}'" if options[:method]
+    #    js_options[:defaultParams] = "'#{options[:defaultParams]}'" if options[:defaultParams]
 
     js_options[:source]        = "'#{url_for(options[:source])}'"
-    #    js_options[:type]          = "'#{options[:method].to_s.upcase}'" if options[:method]
     js_options[:update]        = "'" + (options[:update] || "#{field_id}_auto_complete") + "'"
-    #    js_options[:defaultParams] = "'#{options[:defaultParams]}'" if options[:defaultParams]
 
     {:min_length => :minLength, :delay => :delay}.each do |k, v|
       js_options[v] = options[k] if options[k]
