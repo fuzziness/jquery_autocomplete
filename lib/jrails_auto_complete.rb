@@ -13,6 +13,8 @@ module JrailsAutoComplete
         }.merge!(options)
 
         @items = object_name.to_s.camelize.constantize.find(:all, find_options)
+
+        @items = yield(@items) if block_given?
         render :inline => "<%= auto_complete_result @items, '#{method_name}', '#{params['term']}' %>"
       end
     end
