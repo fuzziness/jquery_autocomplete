@@ -4,15 +4,21 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "jRails autocomplete"
-    gem.summary = "jRails autocomplete using jQuery-ui"
-    gem.description = "This plugin adds autocomplete support to jRails, using jQuery-ui; " +
-                      "it works similarly to the original rails auto complete, but " +
+    gem.name = "jrails_auto_complete"
+    gem.summary = "jRails autocomplete using jQuery-UI"
+    gem.description = "Adds autocomplete support to jRails, using jQuery-UI; it " +
+                      "works similarly to the original rails autocomplete plugin, but " +
                       "generating unobtrusive javascript."
     gem.email = "michele.franzin@gmail.com"
-    gem.homepage = "http://github.com/michelefranzin/jrails_auto_complete"
+    #gem.homepage = "http://github.com/michelefranzin/jrails_auto_complete"
     gem.authors = ["Michele Franzin"]
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+
+    #gem.extra_rdoc_files << 'README.textile' << 'CHANGELOG'
+    gem.add_dependency('rails', '>= 2.1')
+    gem.add_dependency('jrails', '>= 0.6')
+    gem.files.exclude '*install.rb'
+    gem.files.exclude '.gitignore'
+    gem.files.exclude 'javascripts/*'
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
