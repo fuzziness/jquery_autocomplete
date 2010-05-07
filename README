@@ -25,4 +25,4 @@ In your view:
 ...
 <%= text_field_with_auto_complete :fruit, :name %>
 
-Copyright (c) 2010 Michele Franzin, released under the MIT license
+Copyright (c) 2010 Michele Franzin. See LICENSE for details.
