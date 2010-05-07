@@ -26,7 +26,7 @@ In your views:
 
 h2. Todo
 
-* named scope filtering
+* named scope filtering support
 * made a gem
 * test, test... test!
 
@@ -43,6 +43,7 @@ Thanks to Paul Smith for the "original idea":http://github.com/elandesign/formta
 h2. References
 
 fn1. "JRails @ GitHub":http://github.com/aaronchi/jrails
+
 fn2. "jQuery-UI":http://jqueryui.com/
 
 Copyright (c) 2010 Michele Franzin, released under the MIT license
