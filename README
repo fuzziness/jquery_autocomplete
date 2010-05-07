@@ -1,7 +1,7 @@
 JrailsAutoComplete
 ==================
 
-This plugin adds autocomplete support to jrails, using jquery-ui 1.8rc3.
+This plugin adds autocomplete support to jrails, using jquery-ui 1.8.1
 This plugin works similarly to the original rails auto complete
 
 
@@ -17,7 +17,7 @@ end
 
 In your view:
 
-<%= javascript_include_tag 'jquery, 'jquery-ui', 'jquery-ui-i18n' %>
+<%= javascript_include_tag 'jquery, 'jquery-ui.min', 'jquery-ui-i18n.min' %>
 ...
 <%= text_field_with_auto_complete :fruit, :name %>
 
