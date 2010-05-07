@@ -1,15 +1,17 @@
  HEAD [2010-05-07]
 ====================
 
-	Features
+    Features
+        * named scope items filtering
 
-	Enhancements
+    Enhancements
 
-	Changes
+    Changes
 
-	Bugfixes
+    Bugfixes
+
 
  0.1.0 [2010-02-03]
 ====================
 
- First release.
+    First release.
