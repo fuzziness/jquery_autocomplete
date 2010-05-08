@@ -1,13 +1,10 @@
-h1. jRails autocomplete with unobtrusive javascript
+h1. jRails autocomplete
 
-This plugin adds autocomplete support to jrails[1], using jquery-ui[2];
-it works similarly to the original rails auto complete, but generating unobtrusive
-javascript. Additional features:
+Auto Completion plugin using jRails[1] and jQuery-UI[2]; it works similarly to the original rails auto complete, but generating unobtrusive javascript. Additional features:
 
 * named scope items filtering, based on a customized list of autocomplete options.
 
-*WARNING NOTE*: This is an active work in progress - currently only used on
-few live projects right now. Use at your own discretion.
+*WARNING NOTE*: This is an active work in progress - currently only used on few live projects right now. Use at your own discretion.
 
 h2. Usage example
 
@@ -21,17 +18,17 @@ end
 
 In your views:
 
+<pre><code><%= text_field_with_auto_complete :fruit, :name %>
+</code></pre>
+
+be shure to include the jquery/jquery-ui javascript in your layout:
+
 <pre><code><%= javascript_include_tag 'jquery, 'jquery-ui.min', 'jquery-ui-i18n.min' %>
-...
-<%= text_field_with_auto_complete :fruit, :name %>
 </code></pre>
 
 h2. Named scopes with auto_complete_for:
 
-auto_complete_for now optionally accepts a block that is called with the item
-list and HTTP parameters when the auto complete AJAX request is received. This
-block can be used to specify that a named scope be used to generate a
-customized list of autocomplete options.
+auto_complete_for now optionally accepts a block that is called with the item list and HTTP parameters when the auto complete AJAX request is received. This block can be used to specify that a named scope be used to generate a customized list of autocomplete options.
 
 h3. Example using anonymous scope:
 
@@ -63,20 +60,15 @@ end
 
 h2. Todo
 
-* made a gem
 * test, test... test!
 
 h2. Found a Bug?
 
-Please direct all queries to the issue tracker:
-
-"http://github.com/michelefranzin/jrails_auto_complete/issues":http://github.com/michelefranzin/jrails_auto_complete/issues
+Please direct all queries to the issue tracker: "http://github.com/michelefranzin/jrails_auto_complete/issues":http://github.com/michelefranzin/jrails_auto_complete/issues
 
 h2. Credits
 
-Thanks to Paul Smith for the "original idea":http://github.com/elandesign/formtastic_autocomplete.git
-and Pat Shaughnessy for "inspirating":http://patshaughnessy.net/repeated_auto_complete me
-the named scope part.
+Thanks to Paul Smith for the "original idea":http://github.com/elandesign/formtastic_autocomplete.git and Pat Shaughnessy for "inspirating":http://patshaughnessy.net/repeated_auto_complete me the named scope part.
 
 h2. References
 
@@ -84,4 +76,6 @@ fn1. "JRails @ GitHub":http://github.com/aaronchi/jrails
 
 fn2. "jQuery-UI":http://jqueryui.com/
 
-Copyright (c) 2010 Michele Franzin, released under the MIT license
+h2. Copyright
+
+Copyright (c) 2010 Michele Franzin. See LICENSE for details.
