@@ -13,7 +13,7 @@ begin
     #gem.homepage = "http://github.com/michelefranzin/jrails_auto_complete"
     gem.authors = ["Michele Franzin"]
 
-    #gem.extra_rdoc_files << 'README.textile' << 'CHANGELOG'
+    gem.add_development_dependency "yard", ">= 0.5.4"
     gem.add_dependency('rails', '>= 2.1')
     gem.add_dependency('jrails', '>= 0.6')
     gem.files.exclude '*install.rb'
@@ -49,12 +49,12 @@ task :test => :check_dependencies
 
 task :default => :test
 
-require 'rake/rdoctask'
-Rake::RDocTask.new do |rdoc|
-  version = File.exist?('VERSION') ? File.read('VERSION') : ""
-
-  rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "jRails autocomplete #{version}"
-  rdoc.rdoc_files.include('README*')
-  rdoc.rdoc_files.include('lib/**/*.rb')
+begin
+  require 'yard'
+  YARD::Rake::YardocTask.new
+rescue LoadError
+  task :yardoc do
+    abort "YARD is not available. In order to run yardoc, you must: sudo gem install yard"
+  end
 end
+

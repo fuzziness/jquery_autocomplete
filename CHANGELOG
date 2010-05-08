@@ -1,15 +1,15 @@
- HEAD [2010-05-07]
+ HEAD [2010-05-08]
 ====================
 
     Features
         * named scope items filtering
 
     Enhancements
+        * documentation with yard
 
     Changes
 
     Bugfixes
-
 
  0.1.0 [2010-02-03]
 ====================
