@@ -24,9 +24,10 @@ module JrailsAutoCompleteMacrosHelper
   #                                  local data with just a few items. Should be increased
   #                                  when there are a lot of items, where a single character
   #                                  would match a few thousand items.
-  # <tt>:open</tt>::                 Before a request (source-option) is started, after
+  # <tt>:search</tt>::               Before a request (source-option) is started, after
   #                                  minLength and delay are met. Can be canceled (return false),
   #                                  then no request will be started and no items suggested.
+  # <tt>:open</tt>::                 Triggered when the suggestion menu is opened.
   # <tt>:focus</tt>::                Before focus is moved to an item (not selecting), ui.item
   #                                  refers to the focused item. The default action of focus is
   #                                  to replace the text field's value with the value of the focused

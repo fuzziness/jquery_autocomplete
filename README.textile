@@ -21,7 +21,7 @@ In your views:
 <pre><code><%= text_field_with_auto_complete :fruit, :name %>
 </code></pre>
 
-be shure to include the jquery/jquery-ui javascript in your layout:
+be sure to include the jquery/jquery-ui javascript in your layout:
 
 <pre><code><%= javascript_include_tag 'jquery, 'jquery-ui.min', 'jquery-ui-i18n.min' %>
 </code></pre>

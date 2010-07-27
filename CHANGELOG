@@ -4,6 +4,7 @@
     Features
 
     Enhancements
+       * avoid a Rails 3 deprecation warning
 
     Changes
 
