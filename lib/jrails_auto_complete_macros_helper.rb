@@ -15,15 +15,20 @@ module JrailsAutoCompleteMacrosHelper
   #                                  innerHTML should be updated with the autocomplete
   #                                  entries returned by the request.
   #                                  Defaults to <tt>field_id</tt> + '_auto_complete'
+  # <tt>:disabled</tt>::             Disables (true) or enables (false) the autocomplete.
+  #                                  Can be set when initialising (first creating) the autocomplete.
+  #                                  Defaults to <tt>false</tt>.
   # <tt>:delay</tt>::                The delay in milliseconds the Autocomplete waits after
   #                                  a keystroke to activate itself. A zero-delay makes sense
   #                                  for local data (more responsive), but can produce a lot
   #                                  of load for remote data, while being less responsive.
+  #                                  Defaults to <tt>300</tt>.
   # <tt>:min_length</tt>::           The minimum number of characters a user has to type
   #                                  before the Autocomplete activates. Zero is useful for
   #                                  local data with just a few items. Should be increased
   #                                  when there are a lot of items, where a single character
   #                                  would match a few thousand items.
+  #                                  Defaults to <tt>1</tt>.
   # <tt>:search</tt>::               Before a request (source-option) is started, after
   #                                  minLength and delay are met. Can be canceled (return false),
   #                                  then no request will be started and no items suggested.
@@ -47,7 +52,7 @@ module JrailsAutoCompleteMacrosHelper
     js_options[:source]        = "'#{url_for(options[:source])}'"
     js_options[:update]        = "'" + (options[:update] || "#{field_id}_auto_complete") + "'"
 
-    {:min_length => :minLength, :delay => :delay}.each do |k, v|
+    {:min_length => :minLength, :delay => :delay, :disabled => :disabled}.each do |k, v|
       js_options[v] = options[k] if options[k]
     end
 

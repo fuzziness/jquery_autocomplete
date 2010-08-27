@@ -2,6 +2,7 @@
 ====================
 
     Features
+       * added :disabled option
 
     Enhancements
        * avoid a Rails 3 deprecation warning
