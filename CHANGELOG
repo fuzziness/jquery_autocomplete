@@ -1,4 +1,4 @@
- HEAD [2010-05-08]
+ HEAD [2010-08-27]
 ====================
 
     Features
@@ -7,6 +7,7 @@
        * avoid a Rails 3 deprecation warning
 
     Changes
+       * updated jquery-ui to v1.8.4
 
     Bugfixes
 
