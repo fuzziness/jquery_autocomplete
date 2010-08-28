@@ -10,7 +10,7 @@ begin
                       "works similarly to the original rails autocomplete plugin, but " +
                       "generating unobtrusive javascript."
     gemspec.email = "michele.franzin@gmail.com"
-    gemspec.homepage = "http://github.com/michelefranzin/jquery_autocomplete"
+    #gemspec.homepage = "http://github.com/michelefranzin/jquery_autocomplete"
     gemspec.authors = ["Michele Franzin"]
 
     gemspec.add_development_dependency 'yard', '>=0.5.4'
