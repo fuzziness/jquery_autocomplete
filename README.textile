@@ -68,7 +68,7 @@ Please direct all queries to the issue tracker: "http://github.com/michelefranzi
 
 h2. Credits
 
-Thanks to Paul Smith for the "original idea":http://github.com/elandesign/formtastic_autocomplete.git and Pat Shaughnessy for "inspirating":http://patshaughnessy.net/repeated_auto_complete me the named scope part.
+Thanks to Paul Smith for the "original idea":http://github.com/elandesign/formtastic_autocomplete and Pat Shaughnessy for "inspirating":http://patshaughnessy.net/repeated_auto_complete me the named scope part.
 
 h2. References
 
