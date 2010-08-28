@@ -60,7 +60,7 @@ module JrailsAutoCompleteMacrosHelper
       js_options[k] = "function(event,ui){#{options[k]}}" if options[k]
     end
 
-    function = "#{ActionView::Helpers::PrototypeHelper::JQUERY_VAR}('##{field_id}').autocomplete("
+    function = "$('##{field_id}').autocomplete("
     function << options_for_javascript(js_options) + ')'
 
     javascript_tag(function)

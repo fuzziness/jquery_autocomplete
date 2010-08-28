@@ -1,4 +1,4 @@
- HEAD [2010-08-27]
+ HEAD [2010-08-28]
 ====================
 
     Features
@@ -6,6 +6,7 @@
     Enhancements
 
     Changes
+       * no more jRails gem dependancy
 
     Bugfixes
 
