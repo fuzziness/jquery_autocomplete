@@ -6,9 +6,14 @@
     Enhancements
 
     Changes
-       * renamed plugin jquery_autocomplete
 
     Bugfixes
+
+ 0.3.0 [2010-08-28]
+====================
+
+    Changes
+       * renamed plugin jquery_autocomplete
 
  0.2.2 [2010-08-28]
 ====================
