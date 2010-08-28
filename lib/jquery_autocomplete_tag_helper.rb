@@ -1,4 +1,4 @@
-module JrailsAutoCompleteTagHelper
+module JqueryAutocompleteTagHelper
 
   def to_auto_complete(options = {})
     send(:add_default_name_and_id, options)

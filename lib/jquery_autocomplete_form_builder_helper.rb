@@ -1,4 +1,4 @@
-module JrailsAutoCompleteFormBuilderHelper
+module JqueryAutocompleteFormBuilderHelper
 
   def text_field_with_auto_complete(method, options = {}, auto_complete_options = {})
     text_field(method, options) + auto_complete_for(method, auto_complete_options)

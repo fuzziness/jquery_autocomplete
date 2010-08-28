@@ -1,4 +1,4 @@
-module JrailsAutoCompleteMacrosHelper
+module JqueryAutocompleteMacrosHelper
   # Adds JQuery autocomplete functionality to the text input field with the
   # DOM ID specified by +field_id+.
   #

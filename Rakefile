@@ -4,17 +4,17 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gemspec|
-    gemspec.name = "jrails_auto_complete"
-    gemspec.summary = "jRails autocomplete using jQuery-UI"
+    gemspec.name = "jquery_autocomplete"
+    gemspec.summary = "rails autocomplete using jQuery-UI widget"
     gemspec.description = "Adds autocomplete support to rails inputs, using jQuery-UI; it " +
                       "works similarly to the original rails autocomplete plugin, but " +
                       "generating unobtrusive javascript."
     gemspec.email = "michele.franzin@gmail.com"
-    #gem.homepage = "http://github.com/michelefranzin/jrails_auto_complete"
+    gemspec.homepage = "http://github.com/michelefranzin/jquery_autocomplete"
     gemspec.authors = ["Michele Franzin"]
 
-    gemspec.add_development_dependency "yard", ">= 0.5.4"
-    gemspec.add_dependency('rails', '>= 2.1')
+    gemspec.add_development_dependency 'yard', '>=0.5.4'
+    gemspec.add_dependency 'rails', '>=2.1'
     gemspec.files.exclude '*install.rb'
     gemspec.files.exclude '.gitignore'
     gemspec.files.exclude 'javascripts/*'

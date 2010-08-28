@@ -1,6 +1,6 @@
 h1. jQuery autocomplete
 
-Rails Auto Completion plugin using jQuery-UI[1]; it works similarly to the original rails auto complete, but generating unobtrusive javascript. Additional features:
+Rails Auto Completion plugin using jQuery-UI[1] widget; it works similarly to the original rails auto complete, but generating unobtrusive javascript. Additional features:
 
 * named scope items filtering, based on a customized list of autocomplete options.
 
@@ -64,7 +64,7 @@ h2. Todo
 
 h2. Found a Bug?
 
-Please direct all queries to the issue tracker: "http://github.com/michelefranzin/jrails_auto_complete/issues":http://github.com/michelefranzin/jrails_auto_complete/issues
+Please direct all queries to the issue tracker: "http://github.com/michelefranzin/jquery_autocomplete/issues":http://github.com/michelefranzin/jquery_autocomplete/issues
 
 h2. Credits
 

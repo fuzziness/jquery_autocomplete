@@ -1,4 +1,4 @@
-module JrailsAutoComplete
+module JqueryAutocomplete
   def self.included(base)
     base.extend(ClassMethods)
   end
