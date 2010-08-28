@@ -1,6 +1,6 @@
-h1. jRails autocomplete
+h1. jQuery autocomplete
 
-Auto Completion plugin using jRails[1] and jQuery-UI[2]; it works similarly to the original rails auto complete, but generating unobtrusive javascript. Additional features:
+Rails Auto Completion plugin using jQuery-UI[1]; it works similarly to the original rails auto complete, but generating unobtrusive javascript. Additional features:
 
 * named scope items filtering, based on a customized list of autocomplete options.
 
@@ -72,9 +72,7 @@ Thanks to Paul Smith for the "original idea":http://github.com/elandesign/formta
 
 h2. References
 
-fn1. "JRails @ GitHub":http://github.com/aaronchi/jrails
-
-fn2. "jQuery-UI":http://jqueryui.com/
+fn1. "jQuery-UI":http://jqueryui.com/
 
 h2. Copyright
 
